@@ -1,0 +1,60 @@
+._wp_headless_menu_editor {
+
+    .menu-item {
+
+        margin: 0;
+        opacity: 1;
+
+        .menu-item-inner {
+            display: flex;
+
+            .menu-item-segment {
+
+                margin: 1px 3px 0px 0;
+                padding: 0;
+                z-index: 2;
+                display: table;
+
+                .menu-item-segment-content {
+
+                    display: flex;
+
+                    .menu-item-bar {
+                        max-width: 200px;
+                        min-width: 200px;
+
+                        @media (max-width: $mobile-query) {
+                            max-width: 120px;
+                            min-width: 120px;
+                        }
+
+                        margin: 0;
+                        display: block;
+                        padding: 0.4rem 0.4rem 0.4rem 0.8rem;
+                        font-weight: bold;
+
+                        &:hover {
+                            border-color: black;
+                        }
+
+                        div.label {
+                            float: right;
+                            margin-right: 0;
+                        }
+                    }
+
+                    .label {
+                        height: auto;
+                        max-height: 1.5rem;
+                        min-width: 90px;
+                        border: 0 none;
+                        text-align: right;
+                        margin-right: 1rem;
+                        right: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
